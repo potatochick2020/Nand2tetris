@@ -57,11 +57,11 @@ And(a=notsel, b=in, out=a);
 And(b=sel,b=in,out=b);  
 ```
 ## 16-bit gate 
-**(Just use the bit-wise gate and repeat on each single bit)**
-Not16 gate 
-And16 gate 
-Or16 gate 
-Mux16 gate 
+**(Just use the bit-wise gate and repeat on each single bit)**  
+Not16 gate  
+And16 gate  
+Or16 gate  
+Mux16 gate  
  
 ## Or8Way gate 
 An n-way Or gate outputs 1 when at least one of its n bit inputs is 1 and 0 otherwise
