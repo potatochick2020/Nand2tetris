@@ -60,7 +60,21 @@ CHIP ALU {
         Mux16(a=out1, b=out2, sel=f, out=out3);
         // no; // negate the out output?
         Not16(in=out3, out=out4);
-        Mux16(a=out3, b=out4, sel=no, out=out);
+        Mux16(a=out3, b=out4, sel=no, out=out5);
+        //out
+        And16(a=out5, b=true, out=out);
     //zr, // 1 if (out == 0), 0 otherwise
+    And16(a=out5, b=true, out[0..7]=out6);
+    And16(a=out5, b=true, out[8..15]=out7);
+    Or8Way(in=out6, out=zr1);
+    Or8Way(in=out7, out=zr2);
+    Or(a=zr1, b=zr2, out=zr3);
+    Not(in=zr3, out=zr);
+
     //ng; // 1 if (out < 0),  0 otherwise
+    And16(a=out5, b=true, out[15]=msb); //most significant bit
+    Not(in=msb, out=neg1);
+    Not(in=neg1,out=ng);
+
+    
 }
