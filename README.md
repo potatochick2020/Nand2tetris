@@ -16,8 +16,7 @@ Built a family of adder chips, culminating in the construction of an Arithmetic-
 Built a memory hierarchy, from single-bit cells to registers to RAM units of arbitrary sizes based on time-dependent gates called flip-flops which can be used to maintain state and realize memory units.
 
 ## Week 4 -  Assembly and Handle input / output devices (a screen and a keyboard) using memory-resident bitmap
-
-Machine language: This is the delicate software-hardware interface where high-level programs are ultimately reduced to concrete binary codes committed to silicon. We’ll introduce an instruction set and an abstract computer architecture, and learn how to write low-level programs in this framework. We’ll also learn how to handle input / output devices (a screen and a keyboard) using memory-resident bitmaps. In project 4 you will write some low-level interactive programs in assembly language and execute them on a supplied CPU emulator, running on your PC.
+Wrote low-level interactive programs such as multiplying elements in ram and store it in a register and read keyboard input from ram in assembly language and execute them on a supplied CPU emulator, running on your PC. 
 
 ## Week 5 -  
 
